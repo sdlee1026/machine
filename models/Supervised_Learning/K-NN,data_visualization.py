@@ -19,6 +19,7 @@ import matplotlib as mpl
 from matplotlib import font_manager, rc
 import pandas as pd
 import mglearn
+from sklearn.model_selection import train_test_split
 
 mpl.rcParams['axes.unicode_minus'] = False
 font_fname = 'fonts/NanumGothic.ttf'
