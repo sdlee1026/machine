@@ -6,9 +6,8 @@
 # 또한, 모델들의 장단점을 파악하고, 모델별로 어떤 데이터가 잘 들어맞을지 살펴 볼 것임
 # 분류와 회귀 모델을 모두 가지고 있는 알고리즘도 많은데 이런 경우 둘다 살펴 볼 것임
 
-
+import sys
 import warnings
-
 warnings.filterwarnings(action='ignore')
 import collections
 from IPython.display import display
@@ -27,9 +26,11 @@ font_name = font_manager.FontProperties(fname=font_fname).get_name()
 
 rc('font', family=font_name)
 # size, family
-print('font size : ' + str(plt.rcParams['font.size']))
-print('font family : ' + str(plt.rcParams['font.family']))
+print ('font size : '+str(plt.rcParams['font.size']) )
+print ('font family : '+str(plt.rcParams['font.family']) )
 # import default setting
+print('python version : {0}\npandas version : {1}\nmatplotlib version : {2}\nnumpy version : {3}\n'
+.format(sys.version, pd.__version__, mpl.__version__, np.__version__))
 
 
 #  이진분류(classification)_forge dataset_시각화
