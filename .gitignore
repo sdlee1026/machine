@@ -17,6 +17,7 @@ bin-release/
 # Temporary Files #
 ###################
 *.pyc
+tmp*
 
 # Jupyter Notebook
 .ipynb_checkpoints
